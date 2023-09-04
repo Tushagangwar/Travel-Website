@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600;700&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Great+Vibes&family=Quicksand:wght@400;600;700&family=Rubik+Vinyl&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/**########## html elements styling ########**/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.7;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size:1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom:0.5em;
+    letter-spacing: 0.1em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    font-weight:500 ;
+}
+/**#### Utility Classes ###**/
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size:2.2rem;
+}
+.text-red{
+color:rgb(214, 23, 23);
+}
+.text-white{
+color:rgb(236, 236, 222)
+}
+.text-black{
+color:rgba(31, 5, 5, 0.716);
+}
+.text-grey{
+color:gray;
+}
+.btn{
+    display:inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding:0.5em 0.5em;
+    margin:0.5em;
+}
+.btn-primary{
+    background-color:rgb(247, 234, 241);
+    border-radius:20px;
+}
+.btn-primary:hover{
+    background-color: aliceblue;
+}
+.bg-dark{
+    background-color: #263238;
+}
+
+.header{
+    position: relative;
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Img/felix-rostig-UmV2wr-Vbq8-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1.logo{
+    display: inline;
+    font-family: 'Great Vibes', cursive;
+    font-size: 33px;
+}
+.navbar{
+    padding:1rem;
+}
+.header .navbar .logo{
+    float:left;
+}
+.navbar .nav-items{
+    float:right;
+}
+.navbar.nav-item{
+    display:inline-block;
+}
+.navbar a:link,
+.navbar a:visited{
+    color:antiquewhite;
+}
+.navbar a{
+    padding-bottom:0.3rem;
+}
+.navbar h1,i{
+    color: white;
+}
+.navbar a:hover{
+    border-bottom:1px solid white ;
+}
+.navbar::after{
+    content: '';
+    display:block;
+    clear: both;
+}
+.header-content{
+    position: absolute;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+}
+.header-content h1{
+    font-family:'Chewy', cursive;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.header-content p{
+    color: white;
+    text-transform: uppercase;
+}
+.center{
+    text-align: center;
+    margin:auto;
+} 
+/**############ SHOWCASE STYLING SECTION #########*/
+.showcase{
+    background-color: rgb(205, 204, 204);
+    padding:10rem 0;
+}
+.row{
+    box-shadow:0px 0px 20px 0px #aaa;
+    height:350px;
+}
+.container{
+    margin:10rem;
+}
+.row1{
+    margin: 10rem 0;
+}
+.row1 .img-box,.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width:50%;
+}
+.row .img-box{
+height:100%
+
+}
+.row .text-box{
+    background-color:white;
+    padding: 10px;
+    height: 100%;
+
+}
+.row .img-box img{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+}
+.row::after{
+    content:'';
+    display:block ;
+    clear: both;
+}
+.btn-secondary{
+    border:2px solid red;
+    border-radius:1.5em;
+    color:red;
+    background:#fff;
+    padding:1px,1px;
+}
+.btn-secondary:hover{
+    background-color: aliceblue;
+}
+/*######### FEACHERS SECTION STYLING #######*/
+.features{
+    padding: 10rem 0;
+}
+.box-wrapper{
+    box-shadow:5px 5px 20px 0px rgba(0, 0, 0, 0.633) ;
+}
+.box{
+    width:33.33333%;
+    float:left;
+    padding:2rem;
+    text-align: center;
+}
+.box-wrapper::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.box-1,.box-3{
+        background-color: #263238;
+        color:white
+    }
+.box-2{
+    background: #fc0759;
+    color:white;
+}
+/*####### Footer Styling #######*/
+.footer{
+    background-color: black;
+    color: white;
+    padding:2rem;
+    text-align: center;
+}
+.social-media-links i{
+    margin:2rem;
+}
+/*######### About us Styling #########*/
+.about{
+    padding:2rem 0;
+}
+.container{
+    background: rgb(246, 244, 244);
+}
+.about-heading{
+    border-bottom:6px solid rgb(158, 56, 86);
+}
+/*######## ABOUT WRAPPER STYLING ######*/
+.about-wrapper{
+    text-align: center;
+    margin-top:2rem ;
+}
+.about-wrapper .left{
+    float: left;
+    width:50%;
+}
+.about-wrapper .right{
+    float:right;
+    width:50%;
+}
+.about-wrapper::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color:#fc0759;
+    font-weight: bold;
+    padding: 2rem;
+}
+/*########### COUNT STYLING ########*/
+.counts{
+    margin-top:2rem;
+}
+.count-items{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.counts::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.count-items span{
+    font-size:3rem;
+    font-weight: 700;
+    color: #fc0759;
+}
+.count-items p{
+    font-size:1.3rem;
+    font-weight: 500;
+    color: #263238;
+}
+/*######## BANNER STYLLING #########*/
+.about-banner{
+    background:linear-gradient(to bottom, #be2160 48%, #b44374 100%);
+    color: #fff;
+    padding:1rem;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.589);
+}
+.banner-left{
+    width:60%;
+    float: left;
+}
+.banner-right{
+    width:40%;
+    float:right;
+    text-align: right;
+}
+.about-banner::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.banner-line{
+    margin-top:1.3rem;
+    font-weight: 700;
+}
+.banner-button{
+    text-align: center;
+    display:inline-block;
+    font-weight: bold;
+    font-size:2rem;
+    text-transform: uppercase;
+    border:3px solid white;
+    padding:0.3rem 2.5rem;
+    color:#fff;
+}
+/*########### CONTACT PAGE STYLLING #############*/
+.contact-form{
+    padding: 5rem;
+    font-size: 2rem;
+}
+
+.form-wrapper .company-address{
+    width: 49%; 
+    float: left;
+    padding:1rem;
+    height: 760px;
+}
+.form-wrapper .form{
+    font-size:1.6rem;
+    width:49%;
+    float: right;
+    padding:1rem;
+    height:760px;
+}
+.form-wrapper::after{
+    content:'';
+    display: block;
+    clear: both;
+
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-left:1rem ;
+    margin-right: 1rem;
+    color:red;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+      
+}
+.form-wrapper img{
+    width:90%;
+    object-fit: cover;
+    margin-left:2rem;
+    margin-top:2rem;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 4px solid rgb(158, 56, 86);
+    width:100%;
+}
+.form-wrapper .form label{
+    display: block;
+}
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width:100%
+}
+.form-wrapper .form .form-group{
+    margin-bottom:1.2rem;
+}
+.form-wrapper .form label::after{
+    content:'*';
+    color: #be2160; 
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding:1rem;
+}
+.form-btn{
+    display: block;
+    margin:0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    background: #be2160;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/*######## Media quaries ########*/
+@media (max-width:500px){
+    html{
+        font-size:8px;
+    }
+
+.navbar .nav-items, .navbar .logo{
+    float:none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.header-content .main-heading{
+     display: none;
+}
+.row{
+    height: auto;
+    width: 100%;
+}
+.row .img-box, .row .text-box{
+    float: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.features .box{
+    float: none;
+    width:100%;
+    text-align: center;
+    box-shadow:5px 5px 20px 0px rgba(0, 0, 0, 0.633);
+}
+.features .box-2, .features .box-3{
+    margin-top: 7rem;
+}
+.box-wrapper{
+    box-shadow: none;
+}
+.banner-left, .banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.form-wrapper .company-address{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.form-wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto ;
+}
+
+}   
+@media(min-width:501px) and (max-width:768px){
+    html{
+        font-size:8px;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+
+.navbar .nav-items, .navbar .logo{
+    float:none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.row{
+    height: auto;
+    width: 100%;
+}
+.row .img-box, .row .text-box{
+    float: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.features .box{
+    float: none;
+    width:100%;
+    text-align: center;
+    box-shadow:5px 5px 20px 0px rgba(0, 0, 0, 0.633);
+}
+.features .box-2, .features .box-3{
+    margin-top: 7rem;
+}
+.box-wrapper{
+    box-shadow: none;
+}
+.banner-left, .banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.form-wrapper .company-address{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.form-wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto ;
+}
+}
+@media(min-width:769px) and (max-width:1200px)
+{
+    html{
+        font-size:56.25%;
+    }
+    .row .text-box h2{
+        font-size:2.2rem;
+
+    }
+}
+@media(orientation: landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
